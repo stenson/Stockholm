@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98290C2F17F4B8D7009BA54E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98290C2E17F4B8D7009BA54E /* AudioToolbox.framework */; };
+		98290C3117F4BE63009BA54E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98290C3017F4BE63009BA54E /* AVFoundation.framework */; };
+		98290C3417F4BFB3009BA54E /* GHZAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98290C3317F4BFB3009BA54E /* GHZAudioController.m */; };
+		98290C3817F4C3EE009BA54E /* GHZRemoteUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 98290C3717F4C3EE009BA54E /* GHZRemoteUnit.m */; };
 		98396A8C17F49D72002AFE10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98396A8B17F49D72002AFE10 /* Foundation.framework */; };
 		98396A8E17F49D72002AFE10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98396A8D17F49D72002AFE10 /* CoreGraphics.framework */; };
 		98396A9017F49D72002AFE10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98396A8F17F49D72002AFE10 /* UIKit.framework */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98290C2D17F4B8D7009BA54E /* Stockholm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Stockholm.entitlements; sourceTree = "<group>"; };
+		98290C2E17F4B8D7009BA54E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		98290C3017F4BE63009BA54E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		98290C3217F4BFB3009BA54E /* GHZAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHZAudioController.h; sourceTree = "<group>"; };
+		98290C3317F4BFB3009BA54E /* GHZAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHZAudioController.m; sourceTree = "<group>"; };
+		98290C3617F4C3EE009BA54E /* GHZRemoteUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHZRemoteUnit.h; sourceTree = "<group>"; };
+		98290C3717F4C3EE009BA54E /* GHZRemoteUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHZRemoteUnit.m; sourceTree = "<group>"; };
+		98290C3917F4C877009BA54E /* AudioUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioUtilities.h; sourceTree = "<group>"; };
 		98396A8817F49D72002AFE10 /* Stockholm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stockholm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98396A8B17F49D72002AFE10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		98396A8D17F49D72002AFE10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,9 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98290C3117F4BE63009BA54E /* AVFoundation.framework in Frameworks */,
 				98396A8E17F49D72002AFE10 /* CoreGraphics.framework in Frameworks */,
 				98396A9017F49D72002AFE10 /* UIKit.framework in Frameworks */,
 				98396A8C17F49D72002AFE10 /* Foundation.framework in Frameworks */,
+				98290C2F17F4B8D7009BA54E /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98290C3517F4C3E3009BA54E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				98290C3217F4BFB3009BA54E /* GHZAudioController.h */,
+				98290C3317F4BFB3009BA54E /* GHZAudioController.m */,
+				98290C3617F4C3EE009BA54E /* GHZRemoteUnit.h */,
+				98290C3717F4C3EE009BA54E /* GHZRemoteUnit.m */,
+				98290C3917F4C877009BA54E /* AudioUtilities.h */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
 		98396A7F17F49D72002AFE10 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +129,8 @@
 		98396A8A17F49D72002AFE10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98290C3017F4BE63009BA54E /* AVFoundation.framework */,
+				98290C2E17F4B8D7009BA54E /* AudioToolbox.framework */,
 				98396A8B17F49D72002AFE10 /* Foundation.framework */,
 				98396A8D17F49D72002AFE10 /* CoreGraphics.framework */,
 				98396A8F17F49D72002AFE10 /* UIKit.framework */,
@@ -114,6 +142,8 @@
 		98396A9117F49D72002AFE10 /* Stockholm */ = {
 			isa = PBXGroup;
 			children = (
+				98290C3517F4C3E3009BA54E /* Audio */,
+				98290C2D17F4B8D7009BA54E /* Stockholm.entitlements */,
 				98396A9A17F49D72002AFE10 /* GHZAppDelegate.h */,
 				98396A9B17F49D72002AFE10 /* GHZAppDelegate.m */,
 				98396A9D17F49D72002AFE10 /* Main_iPhone.storyboard */,
@@ -203,6 +233,17 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = GHz;
 				TargetAttributes = {
+					98396A8717F49D72002AFE10 = {
+						DevelopmentTeam = YB9BTDNY2X;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
 					98396AAB17F49D72002AFE10 = {
 						TestTargetID = 98396A8717F49D72002AFE10;
 					};
@@ -254,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98290C3817F4C3EE009BA54E /* GHZRemoteUnit.m in Sources */,
 				98396AA517F49D72002AFE10 /* GHZViewController.m in Sources */,
 				98396A9C17F49D72002AFE10 /* GHZAppDelegate.m in Sources */,
+				98290C3417F4BFB3009BA54E /* GHZAudioController.m in Sources */,
 				98396A9817F49D72002AFE10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,10 +436,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Stockholm/Stockholm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stockholm/Stockholm-Prefix.pch";
 				INFOPLIST_FILE = "Stockholm/Stockholm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,10 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Stockholm/Stockholm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stockholm/Stockholm-Prefix.pch";
 				INFOPLIST_FILE = "Stockholm/Stockholm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -475,6 +526,7 @@
 				98396ABF17F49D72002AFE10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98396AC017F49D72002AFE10 /* Build configuration list for PBXNativeTarget "StockholmTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +535,7 @@
 				98396AC217F49D72002AFE10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

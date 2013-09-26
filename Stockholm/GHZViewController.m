@@ -7,9 +7,11 @@
 //
 
 #import "GHZViewController.h"
+#import "GHZAudioController.h"
 
-@interface GHZViewController ()
-
+@interface GHZViewController () {
+    GHZAudioController *_audio;
+}
 @end
 
 @implementation GHZViewController
@@ -17,7 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    _audio = [[GHZAudioController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

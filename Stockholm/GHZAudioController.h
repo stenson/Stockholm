@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CocoaLibSpotify.h"
 
 @interface GHZAudioController : NSObject
+
+- (void)playSpotifyTrack:(SPTrack *)track;
 
 @end
